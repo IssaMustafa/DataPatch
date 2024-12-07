@@ -3,7 +3,7 @@ from src.fill_null import FillNull
 
 if __name__ == "__main__":
     # Load your dataset
-    df = pd.read_csv("used_cars_data.csv")
+    df = pd.read_csv("your_dataset.csv")
 
     # Instantiate the FillNull class and process the dataset
     fill_null = FillNull(df)
@@ -14,9 +14,9 @@ if __name__ == "__main__":
     print(filled_df.isnull().sum())
 
     # Access all trained models for a specific column, e.g., 'Engine'
-    trained_models_for_engine = fill_null.trained_models.get('Engine')
-    print("Trained models for 'Engine':")
-    print(trained_models_for_engine)
+    trained_models_for_your_coulmn = fill_null.trained_models.get('Any column name')
+    print("Trained models for 'your column':")
+    print(trained_models_for_your_coulmn)
 
     # Save the processed DataFrame
     filled_df.to_csv("processed_dataset.csv", index=False)
