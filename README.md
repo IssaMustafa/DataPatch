@@ -14,7 +14,7 @@ This project focuses on handling missing data in datasets by training machine le
 1. **Clone this repository**:
    ```bash
    git clone https://github.com/IssaMustafa/DataPatch
-   cd missing-data-imputation
+   cd DataPatch
 
 
 2. Set up a virtual environment:
